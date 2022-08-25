@@ -14,6 +14,7 @@ span{
 
 p{
     font-weight: 400;
+    font-size: 15px;
 }
 
 .container{
@@ -129,34 +130,64 @@ p{
 /* continue here */
 @media only screen and (max-width:426px){
     .content{
-        width: 200px;
+        width: 350px;
         height: 600px;
-        top: 70px;
-        right: 42.5%;
+        top: 27px;
+        right: 5.5%;
     }
 
     .img-card{
         grid-area: 1 / 1 / 4 / 2;
-        width: 200px;
+        width: 350px;
         height: 200px;
+        border-radius: 15px 15px 0px 0;
     }
 
     .img-card >img:nth-child(1){
-        display: none;
-    }
-
-    .img-card > img:nth-child(2){
-        display: block;
-        width: 200px;
+        width: 350px;
         height: 200px;
+        border-radius: 15px 15px 0px 0;
     }
 
     .card-content{
         grid-area: 3 / 1 / 4 / 2;
-        width: 200px;
+        width: 300px;
+        text-align: center;
     }
 }
 
-@media only screen and (max-width:376px){}
+@media only screen and (max-width:376px){
+    .content{
+        width: 300px;
+    }
 
-@media only screen and (max-width:321px){}
+    .img-card{
+        width: 300px;
+    }
+
+    .img-card > img:nth-child(1){
+        width: 300px;
+    }
+
+    .card-content{
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width:321px){
+    .content{
+        width: 260px;
+    }
+
+    .img-card{
+        width: 260px;
+    }
+
+    .img-card > img:nth-child(1){
+        width: 260px;
+    }
+
+    .card-content{
+        width: 240px;
+    }
+}
